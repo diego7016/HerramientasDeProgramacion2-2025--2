@@ -26,6 +26,7 @@ namespace ClinicaApp.Forms
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
@@ -100,6 +101,7 @@ namespace ClinicaApp.Forms
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lblTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -108,7 +110,7 @@ namespace ClinicaApp.Forms
             this.ResumeLayout(false);
             this.PerformLayout();
 
-        }
+        }      
 
         #endregion
 
